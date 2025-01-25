@@ -10,7 +10,7 @@ const Login = () => {
             id: response.id,
             avatar: response.picture.data.url
         }
-        const loginResponse = await fetch('http://localhost:3000/api/auth/login', {
+        const loginResponse = await fetch('https://fb-auth-mern-app-api.vercel.app/api/auth/login', {
             method: 'post',
             credentials: 'include',
             headers: { "Content-type": "application/json" },
