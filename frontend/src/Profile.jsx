@@ -5,7 +5,7 @@ const Profile = () => {
 
     useEffect(() => {
         const getUser = async () => {
-            const response = await fetch('http://localhost:3000/api/auth/get-user', {
+            const response = await fetch('https://fb-auth-mern-app-api.vercel.app/api/auth/get-user', {
                 method: 'get',
                 credentials: 'include',
             })
